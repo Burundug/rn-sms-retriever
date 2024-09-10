@@ -45,7 +45,7 @@ class SmsBroadcastReceiver(private val mContext: ReactApplicationContext?) : Bro
     if (mContext == null) {
       return
     }
-    if (!mContext.hasActiveCatalystInstance()) {
+    if (!mContext.hasActiveReactInstance()) {
       return
     }
     val map = WritableNativeMap()
